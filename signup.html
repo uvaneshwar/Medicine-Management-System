@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Health App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i> HealthApp
+        </div>
+    </header>
+
+    <main class="authentication-page">
+        <div class="authentication-card signup-card">
+            <h2 class="authentication-card-title">Sign Up</h2>
+            <form class="signup-form">
+                <div class="form-input-group">
+                    <input type="text" id="signup-name" placeholder="Full Name" required class="form-input">
+                </div>
+                <div class="form-input-group">
+                    <input type="email" id="signup-email" placeholder="Email" required class="form-input">
+                </div>
+                <div class="form-input-group">
+                    <input type="password" id="signup-password" placeholder="Password" required class="form-input">
+                </div>
+                <div class="form-input-group">
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required class="form-input">
+                </div>
+                <button type="submit" class="button button-primary">Sign Up</button>
+            </form>
+            <div class="authentication-links">
+                <a href="login.html">Already have an account? Log in.</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 HealthApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Health App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="dashboard-header-section">
+        <div class="logo">
+            <i class="fas fa-heartbeat"></i> HealthApp
+        </div>
+        <nav class="dashboard-navigation">
+            
+            <a href = "home.html" style="text-decoration: none;" class="button button-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-main-content">
+        <section class="dashboard-page-header">
+            <div class="dashboard-welcome-message">
+                <h2 class="dashboard-welcome-heading">Hello, User!</h2>
+            </div>
+        </section>
+
+        <div class="dashboard-body-content">
+            <section class="add-medicine-section">
+                <h3 class="add-medicine-heading">Add Medicine</h3>
+                <form class="add-medicine-form">
+                    <div class="form-input-group">
+                        <input type="text" id="medicine-name" placeholder="Medicine Name" class="form-input">
+                    </div>
+                    <div class="form-input-group">
+                        <input type="text" id="dosage" placeholder="e.g., 500mg" class="form-input">
+                    </div>
+                    <div class="form-input-group">
+                        <input type="text" id="frequency" placeholder="e.g., Twice a day" class="form-input">
+                    </div>
+                    <button type="submit" class="button button-accent">Add Medicine</button>
+                </form>
+            </section>
+
+            <section class="medicine-list-section">
+                <h3 class="medicine-list-heading">Medicine List</h3>
+                <div class="data-table-responsive">
+                    <table id="medicine-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="data-table-header-cell">Medicine Name</th>
+                                <th class="data-table-header-cell">Dosage</th>
+                                <th class="data-table-header-cell">Frequency</th>
+                                <th class="data-table-header-cell">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="medicine-table-body" class="data-table-body">
+                            <tr class="data-table-row">
+                                <td class="data-table-cell">Medicine A</td>
+                                <td class="data-table-cell">250mg</td>
+                                <td class="data-table-cell">Once a day</td>
+                                <td class="data-table-cell">
+                                    <div class="action-icons">
+                                        <button class="action-button edit-button"><i class="fas fa-pencil"></i></button>
+                                        <button class="action-button delete-button"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="data-table-row">
+                                <td class="data-table-cell">Medicine B</td>
+                                <td class="data-table-cell">500mg</td>
+                                <td class="data-table-cell">Twice a day</td>
+                                <td class="data-table-cell">
+                                    <div class="action-icons">
+                                        <button class="action-button edit-button"><i class="fas fa-pencil"></i></button>
+                                        <button class="action-button delete-button"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 HealthApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
